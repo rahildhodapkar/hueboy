@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Huebris</h1>
+        <h1>Hueboy</h1>
         <h2>Easily make beautiful linear, radial, and conic gradients</h2>
       </header>
       <main>
