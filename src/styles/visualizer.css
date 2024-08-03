@@ -1,0 +1,9 @@
+.visualizer {
+  border-radius: 15px;
+  aspect-ratio: 1;
+  position: sticky;
+  top: 5rem;
+  min-width: 200px;
+  max-width: 40svw;
+  width: 100%;
+}

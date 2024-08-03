@@ -1,0 +1,68 @@
+.palette {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.palette li {
+  position: relative;
+  overflow: visible;
+}
+
+.palette li:not(:last-child) button {
+  position: absolute;
+  z-index: 10;
+  top: -1rem; 
+  right: -1rem; 
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 0.1rem;
+  background: var(--bg-color);
+  border: none;
+  border-radius: 100%;
+  fill: var(--font-color);
+  transition: fill 200ms ease-out;
+  display: grid;
+  place-content: center;
+}
+
+.palette li:not(:last-child) button:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+
+.color-picker {
+  display: none;
+}
+
+.color-picker-button,
+#add-color {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #000000;
+}
+
+#add-color {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  fill: var(--font-color);
+  transition: background 200ms ease-out;
+}
+
+#add-color:hover {
+  background-color: var(--accent-color);
+}
+
+@media only screen and (max-width: 1024px) {
+  .visualizer {
+    position: static;
+  }
+}

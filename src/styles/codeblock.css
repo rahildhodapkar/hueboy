@@ -1,0 +1,23 @@
+.codeblock-container {
+  position: relative;
+}
+
+.codeblock-container pre {
+  border: solid 2px var(--accent-color);
+  border-radius: 15px;
+}
+
+.codeblock-container button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  fill: var(--font-color);
+  transition: fill 200ms ease-out;
+}
+
+.codeblock-container button:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
+}

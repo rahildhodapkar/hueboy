@@ -1,0 +1,62 @@
+:root {
+  --bg-color: #0f172a;
+  --bg-sec-color: #475569;
+  --font-color: #cbd5e1;
+  --accent-color: #ef4444;
+  --shadow-color: 0deg 71% 26%;
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.55),
+    1px 1.9px 2.4px -0.8px hsl(var(--shadow-color) / 0.55),
+    2.5px 5.1px 6.4px -1.7px hsl(var(--shadow-color) / 0.55),
+    6.3px 12.5px 15.7px -2.5px hsl(var(--shadow-color) / 0.55);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Source Code Pro", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  align-self: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+main #one,
+main #two {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
