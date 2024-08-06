@@ -6,7 +6,6 @@ import "./components/Palette";
 import Palette from "./components/Palette";
 import Sliders from "./components/Sliders";
 import Visualizer from "./components/Visualizer";
-import Loader from "./components/Loader";
 
 function App() {
   const [angle, setAngle] = useState(90);
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <>
-      <Loader />
       <header>
         <h1>Hueboy</h1>
         <h2>Easily make beautiful linear, radial, and conic gradients</h2>
