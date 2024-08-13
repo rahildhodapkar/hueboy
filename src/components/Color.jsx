@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function Color({ defaultValue = "#000000", id, onChange }) {
   const colorInputRef = useRef(null);

@@ -4,7 +4,7 @@ import CodeBlock from "./components/CodeBlock";
 import { ColorProvider } from "./components/ColorContext";
 import "./components/Palette";
 import Palette from "./components/Palette";
-import Sliders from "./components/Sliders";
+import Controls from "./components/Controls";
 import Visualizer from "./components/Visualizer";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           </div>
           <div id="two">
             <Palette />
-            <Sliders
+            <Controls
               angle={angle}
               setAngle={setAngle}
               easing={easing}
