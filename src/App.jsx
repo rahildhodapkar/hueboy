@@ -17,7 +17,7 @@ function App() {
     <>
       <header>
         <h1>Hueboy</h1>
-        <h2>Easily make beautiful linear, radial, and conic gradients</h2>
+        <h2>Easily generate CSS code for beautiful linear, radial, or conic gradients</h2>
       </header>
       <main>
         <ColorProvider>
