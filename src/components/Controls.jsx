@@ -20,6 +20,10 @@ export default function Controls({
   setGradientType,
 }) {
   useEffect(() => {
+    const radioButtons = document.querySelectorAll(
+      ".radio-container fieldset label"
+    );
+
     const easingRadios = document.querySelectorAll(
       ".easing-container fieldset label"
     );
@@ -29,13 +33,13 @@ export default function Controls({
 
     function clearBackground(radioLabels) {
       radioLabels.forEach((label) => {
-        label.style.backgroundColor = ""; 
+        label.style.backgroundColor = "";
       });
     }
 
     function setBackground(e, radioLabels) {
       clearBackground(radioLabels);
-      e.target.style.backgroundColor = "#ef4444"; 
+      e.target.style.backgroundColor = "#ef4444";
     }
 
     easingRadios.forEach((radio) => {
@@ -45,6 +49,15 @@ export default function Controls({
     gradientRadios.forEach((radio) => {
       radio.addEventListener("click", (e) => setBackground(e, gradientRadios));
     });
+
+    easingRadios[0].click();
+    gradientRadios[0].click();
+
+    return () => {
+      radioButtons.forEach((radio) => {
+        radio.removeEventListener("change", () => {});
+      });
+    };
   }, []);
 
   const handleAngleChange = (e) => {
