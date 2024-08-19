@@ -1,8 +1,8 @@
-# React + Vite
+# Hueboy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visit the website at hueboy.dev
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+Creating beautiful and captivating gradients in CSS can be a chore for web developers. Hueboy allows its users to 
+easily generate CSS code for amazing gradients. The UI is intuitive and allows users to change the gradient type (linear,
+radial, conic), the angle, and colors used.
